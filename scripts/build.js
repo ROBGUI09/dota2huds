@@ -290,7 +290,7 @@ fs.writeFileSync(
 // sitemap.xml
 fs.writeFileSync(
   __dirname + '/../build/sitemap.xml',
-  new SiteMap('https://charlesstover.github.io/dota2huds/')
+  (new SiteMap('https://robgui09.github.io/dota2huds/')
     .setDir(__dirname)
     .urls(
       Object.keys(huds)
@@ -312,5 +312,5 @@ fs.writeFileSync(
               ]
             ]
         )
-    )
+    )).toString()
 );
